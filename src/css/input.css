@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+@import 'tailwindcss';
+@import './style.css';
+
+@source './../../index.html';
+@source './../../pages/*.html';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Font faces */
+  --font-title: 'Cairo', sans-serif;
+  --font-body: 'Cairo', sans-serif;
+
+  /* Colors */
+  --color-purple-50: #faf5ffff;
+  --color-purple-100: #f3e8ffff;
+  --color-purple-200: #e9d4ffff;
+  --color-purple-300: #dab2ffff;
+  --color-purple-400: #c27affff;
+  --color-purple-500: #ad46ffff;
+  --color-purple-600: #9810faff;
+  --color-purple-700: #8200dbff;
+  --color-purple-800: #6e11b0ff;
+  --color-purple-900: #59168bff;
+  --color-purple-950: #3c0366ff;
+  --color-red-50: #fff1f2ff;
+  --color-red-100: #ffe0e1ff;
+  --color-red-200: #ffc6c9ff;
+  --color-red-300: #ff9fa4ff;
+  --color-red-400: #ff676eff;
+  --color-red-500: #fb2c36ff;
+  --color-red-600: #e91923ff;
+  --color-red-700: #c4111aff;
+  --color-red-800: #a21219ff;
+  --color-red-900: #86161bff;
+  --color-red-950: #490609ff;
+  --color-light-50: #fdfaffff;
+  --color-light-100: #f3f0f5ff;
+  --color-light-200: #e9e6ebff;
+  --color-light-300: #dfdce1ff;
+  --color-light-400: #d5d2d7ff;
+  --color-light-500: #cbc8cdff;
+  --color-light-600: #c1bec3ff;
+  --color-light-700: #b7b4b9ff;
+  --color-light-800: #adaaafff;
+  --color-light-900: #a3a0a5ff;
+  --color-light-950: #99969bff;
+  --color-midnight-50: #fff9ffff;
+  --color-midnight-100: #dcd1e5ff;
+  --color-midnight-200: #aa9fb3ff;
+  --color-midnight-300: #82778bff;
+  --color-midnight-400: #64596dff;
+  --color-midnight-500: #54495dff;
+  --color-midnight-600: #44394dff;
+  --color-midnight-700: #352a3eff;
+  --color-midnight-800: #261b2fff;
+  --color-midnight-900: #180d21ff;
+  --color-midnight-950: #0b0014ff;
+
+  /* Shadows & effects */
+  --shadow-card: 0px 3px 6px rgba(24, 13, 33, 0.04), 0px 11px 11px rgba(24, 13, 33, 0.03), 0px 24px 14px rgba(24, 13, 33, 0.02), 0px 43px 17px rgba(24, 13, 33, 0.01), 0px 67px 19px rgba(24, 13, 33, 0);
+  --shadow-purple: 0px 18px 41px rgba(152, 16, 250, 0.1), 0px 74px 74px rgba(152, 16, 250, 0.09), 0px 166px 99px rgba(152, 16, 250, 0.05), 0px 295px 118px rgba(152, 16, 250, 0.01), 0px 460px 129px rgba(152, 16, 250, 0);
+  --shadow-black: 0px 18px 41px rgba(24, 13, 33, 0.1), 0px 74px 74px rgba(24, 13, 33, 0.09), 0px 166px 99px rgba(24, 13, 33, 0.05), 0px 295px 118px rgba(24, 13, 33, 0.01), 0px 460px 129px rgba(24, 13, 33, 0);
+  --shadow-button: 0px 7px 8px rgba(250, 245, 255, 0.25) inset, 0px 18px 41px rgba(152, 16, 250, 0.1), 0px 74px 74px rgba(152, 16, 250, 0.09), 0px 166px 99px rgba(152, 16, 250, 0.05), 0px 295px 118px rgba(152, 16, 250, 0.01), 0px 460px 129px rgba(152, 16, 250, 0);
+}
