@@ -8,14 +8,14 @@
   </head>
   <body>
     <!-- Hero section -->
-    <section class="relative z-10 container grid h-[650px] place-content-center text-center">
+    <section class="relative z-10 container grid h-[650px] place-content-center overflow-hidden text-center">
       <span class="light-effect -top-[124px] left-2/4 -z-10 size-[498px] origin-center -translate-x-2/4"></span>
       <div class="w-full space-y-12 lg:max-w-[790px]">
         <div class="space-y-4">
           <h1 class="text-3xl font-bold lg:text-4xl">رحلتك لبيئة آمنة و حياة مطمئنة مع نبض الأمان</h1>
           <p class="text-dimmed-theme text-xl">موقع تعليمي و توعوي لأهمية الامان من الحرائق</p>
         </div>
-        <a href="./login.html" class="button primary px-6!">
+        <!-- <a href="./login.html" class="button primary px-6!">
           ابدأ الرحلة الآن
           <svg viewBox="0 0 20 20" class="fill-none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -23,7 +23,7 @@
               fill="currentColor"
             />
           </svg>
-        </a>
+        </a> -->
       </div>
     </section>
     <!-- Hero section -->
@@ -31,7 +31,7 @@
     <!-- Questions section -->
     <section class="container space-y-18 py-14">
       <h1 class="section-title">لماذا نهتم بالأمن و السلامة؟</h1>
-      <div class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+      <div class="[&_.card]:hover:bg-light-100! grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3 [&_.card]:transition-colors">
         <!-- Cards -->
         <a href="./view-01.html" class="card">
           <div class="card-content">
@@ -80,12 +80,43 @@
     </section>
     <!-- Questions section -->
 
-    <!-- Are you in danger -->
-    <section class="container space-y-18 py-14 text-center">
-      <h1 class="section-title">هل انت بخطر؟</h1>
-      <input type="checkbox" class="checkbox" name="in_danger" id="in-danger" />
-      <label for="in-danger">نعم, انا بخطر</label>
+    <!-- Robot -->
+    <section class="dark bg-midnight-900 dark:text-light-50 relative z-10 container mt-40 space-y-6 overflow-hidden py-14">
+      <span class="light-effect -top-[124px] left-2/4 -z-10 size-[498px] origin-center -translate-x-2/4 opacity-20"></span>
+      <h1 class="text-2xl font-bold text-purple-500">حين يصبح الذكاء الاصطناعي حارسًا</h1>
+
+      <div class="space-y-8">
+        <p class="leading-8">
+          عندما يلمح الخطر خيطه الأول… يبدأ الروبوت دوره.
+          <br />
+          لم يُصمّم ليكون آلة فقط، بل درعًا ذكيًا يقف في الصف الأول لحماية المكان في الدقائق التي تُحدّد فيها النتيجة: إما سيطرة… أو انتشار.
+          <br />
+          <br />
+          بمجرد أن تلتقط حسّاسات الحرارة والدخان أي تغير بسيط في البيئة، يتحرك الروبوت بسرعة استجابة تفوق البشر، يندفع نحو مصدر الحريق بخطوات ثابتة، مزوّدًا بنظام رش متطور يطلق مادة إطفاء أولية تقلل من شدة اللهب، وتبطئ انتشار النار، وتمنح المكان تلك “اللحظات الذهبية” حتى تصل فرق الإطفاء.
+        </p>
+
+        <div class="space-y-6">
+          <h2 class="text-xl font-bold">مهامه أثناء التدخل الطارئ:</h2>
+          <ul class="space-y-3">
+            <li>إطلاق إنذارات صوتية وضوئية تُنبّه كل من في الموقع.</li>
+            <li>إرسال موقع الحريق وإحداثياته فورًا لغرفة التحكم.</li>
+            <li>فتح مسار آمن عبر تقليل درجة اللهب وتمهيد الطريق لفرق الإطفاء.</li>
+          </ul>
+        </div>
+        <div class="space-y-6">
+          <h2 class="text-xl font-bold">ميزة التحكم الفوري:</h2>
+          <p>بمجرد الضغط على زر الطوارئ، يتلقى الروبوت الإشارة وينطلق دون أي تأخير. لا ينتظر أوامر إضافية… ولا يتردد. سرعته في الرد هي الفرق بين “شرارة” و”كارثة”.</p>
+        </div>
+
+        <div class="bg-midnight-800 mt-28 space-y-8 overflow-hidden rounded-lg p-8 text-center">
+          <p>هو لا يحل محل رجال الإطفاء، لكنه البطل الأول في الثواني الحرجة— يخفف الخطر، يحمي الأرواح، ويمنح المكان فرصة النجاة قبل وصول الفريق المختص</p>
+          <div class="grid gap-4">
+            <input type="checkbox" name="in_danger" id="in-danger" class="scale-125" />
+            <label class="button primary mx-auto" for="in-danger">اضغط الزر ان كنت بخطر</label>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Are you in danger -->
+    <!-- Robot -->
   </body>
 </html>
